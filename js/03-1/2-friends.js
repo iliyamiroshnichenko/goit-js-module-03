@@ -29,7 +29,7 @@ const findFriendByName = function (allFriends, name) {
 console.log(findFriendByName(friends, "Kiwi"));
 console.log(findFriendByName(friends, "Chelsey"));
 
-// Получаем имена всез друзей
+// Получаем имена всех друзей
 const getAllNames = function (allFriends) {
     const names = [];
     for (const friend of allFriends) {
