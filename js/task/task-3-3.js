@@ -1,15 +1,30 @@
+// const findBestEmployee = function (employees) {
+//   'use strict';
+//   let max = 0;
+//   let bestEmpoyee = '';
+//   const keys = Object.keys(employees);
+//   for (const key of keys) {
+//     if (employees[key] > max) {
+//       max = employees[key];
+//       bestEmpoyee = key;
+//     }
+//   }
+//   return bestEmpoyee;
+// };
+
+
 const findBestEmployee = function (employees) {
-  'use strict';
+  "use strict";
+  // Write code under this line
+  let bestEmployee = "";
   let max = 0;
-  let bestEmpoyee = '';
-  const keys = Object.keys(employees);
-  for (const key of keys) {
-    if (employees[key] > max) {
-      max = employees[key];
-      bestEmpoyee = key;
+  for (const [name, value] of Object.entries(employees)) {
+    if (value > max) {
+      max = value;
+      bestEmployee = name;
     }
   }
-  return bestEmpoyee;
+  return bestEmployee;
 };
 
 // Объекты и ожидаемый результат
